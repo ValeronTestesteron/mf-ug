@@ -41,7 +41,7 @@
           </li>
         </ul>
       </div>
-      <a class="head-cb" href="/">Заказать</a>
+      <a class="head-cb" href="#call-b">Заказать</a>
     </nav>
     <div class="center-composition">
       <h1 class="h1-t">Покрытия из резиновой крошки</h1>
@@ -79,7 +79,7 @@
             <img src="img/2.png" alt="" class="img-wp">
             <h4 class="h4-wp">Торнадо Практик</h4>
             <p class="p-wp">Покрытие отлично справляется с природными невзгодами и не прихотливо в уходе. Детская или спортивная площадка всегда готова к использованию и не требует подготовки даже после зимнего сезона.</p>
-            <a href="#" class="more">Подробнее</a>
+            <a href=".popup-info" class="more">Подробнее</a>
           </div>
           <div class="col-lg-6">
             <img src="img/4.png" alt="" class="img-wp">
@@ -217,7 +217,7 @@
             </div>
             <div class="col-lg-6"><div class="map-w">
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10837.474597400886!2d39.592489699999994!3d47.2289345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1528750148011" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-              <p class="desc-text">Наше производство нагодится в Ростовской области, но мы работаем по всей России</p>
+              <p class="desc-text hid-t">Наше производство нагодится в Ростовской области, но мы работаем по всей России</p>
             </div></div>
           </div>
         </div>
@@ -333,14 +333,69 @@
   <footer class="main-footer">
     <div class="container">
       <div class="row">
-
+        <div class="wrap-foter">
+          <div class="logo-wrap">
+            <img src="img/logo.png" alt="" class="fot-logo">
+            <span class="bold">МФ<br>ЮГ</span>
+          </div>
+          <div class="phone-wrap">
+            <div class="adres-wrap">
+              <h4 class="fot-h4">Адрес</h4>
+              <span class="fot-span">Город, улица №№</span>
+            </div>
+            <div class="phone">
+              <h4 class="fot-h4">телефон</h4>
+              <a href="tel: 88002002020" class="fot-a"><span class="fot-span">8 (800) 200-20-20</span></a>
+            </div>
+            <div class="email">
+              <h4 class="fot-h4">Email</h4>
+              <span class="fot-span">samplemail@mail.com</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
 
+  <div class="popup-info zoom-anim-dialog mfp-hide">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="wrap-fotorama-block">
+          <div class="fotorama" data-nav="thumbs" data-minheight="513">
+            <img src="img/pop-1.png">
+            <img src="http://s.fotorama.io/2.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="wrap-slide-text">
+          <div class="popip-title">Срок службы 10 лет</div>
+          <div class="popup-h2">Торнадо Практик</div>
+          <div class="popup-text">Покрытие отлично справляется с природными невзгодами и не прихотливо в уходе.
+            Детская или спортивная площадка всегда готова к использованию и не
+            требует подготовки даже после зимнего сезона. <br> <br>
+
+            Это покрытие состоит резиновой крошки и выпускается в нескольких  цветах – красный, зеленый, синий. К основным плюсам этого «Торнадо-Практик» можно отнести:<br><br>
+          - Влагостойкость;<br>
+          - Амортизацию;<br>
+          - Травмобезопастность;<br>
+          - Морозостойкость;<br>
+          - Ударопрочность.<br><br>
+          Это покрытие отлично справляется с природными невзгодами и не прихотливо в уходе. Детская или спортивная площадка всегда готова к использованию и не требует подготовки даже после зимнего сезона.<br><br>
+          Благодаря травмобезопастному покрытию высокого качества «Торнадо-Практик» является отличным аналогом тортановых и резиновых покрытий, при этом по стоимости более выгоден.
+          Укладывается достаточно быстро и без хлопот. Единственным условием является то, что поверхность, на которую настилается покрытие (бетон или асфальт) должна быть ровной и иметь сток для воды.
+          Выбирая «Торнадо-Практик» в качестве покрытия для детских площадок, вы делаете выбор в пользу качества за умеренную цену. Можно не беспокоиться о том, как покрытие будет реагировать на сильные морозы, жару, прямые солнечные лучи. Оно быстро высыхает и препятствует к возникновению на поверхности ледяной корки. Благодаря неприхотливости и легкости в уходе можно на долгие годы обеспечить игровую зону по-настоящему красивым и качественным покрытием
+
+          </div>
+        </div>
+      </div>
+      <button title="Close (Esc)" type="button" class="mfp-close"></button>
+    </div>
+  </div>
+</div>
 
 
-    <!--<div class="top" title="Наверх"><i class="fa fa-angle-up"></i></div>-->
 
     <script  src="js/libs.min.js"></script>
 
@@ -389,6 +444,12 @@
          },500);
          e.preventDefault();
        });
+
+       $('.more').magnificPopup({
+          type: 'inline',
+          removalDelay: 300,
+          mainClass: 'my-mfp-zoom-in'
+       });
   /*
       //E-mail Ajax Send
           $(".callback-form").submit(function() { //Change
@@ -406,20 +467,6 @@
             });
             return false;
           });
-
-
-        //Кнопка наверх
-        $(window).scroll(function (){
-          if ($(this).scrollTop() >= $(this).height()){
-            $('.top').addClass('active');
-          } else {
-            $('.top').removeClass('active');
-          }
-        });
-        $('.top').click(function () {
-          $('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
-        });
-
 
 */
     </script>
